@@ -1,0 +1,160 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "font-awesome-sprockets"
+@import "font-awesome"
+
+body
+  background-color:  #ebebeb
+  box-sizing: border-box
+  margin: 0
+  min-width: 450px
+  overflow: auto
+
+h1, h3
+  font-weight: 500
+  margin: 0
+  margin-top: 20px
+  text-align: center
+
+a
+  color: black
+  text-decoration: underline
+
+.grayscale
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+  filter: gray /* IE6-9 */
+  -webkit-filter: grayscale(100%)
+
+.header
+  height: 500px
+  text-align: center
+  width: 100%
+  background-color: black
+  color: white
+  padding-top: 50px
+  position: relative
+  .logo
+    background-image: url('bug.png')
+    height: 100px
+    width: 100px
+    margin: 0 auto
+  .header-title
+    font-size: 50pt
+    padding-top: 100px
+  .subheader
+    font-size: 30pt
+
+#menu
+  border-bottom: 5px solid #242424
+  display: block
+  position: absolute
+  width: 100%
+  height: auto
+  top: auto
+  right: auto
+  bottom: 0px
+  left: 0px
+  background-color: black
+#menu.fixed
+  display: block
+  position: fixed
+  width: 100%
+  height: auto
+  top: 0px
+  right: auto
+  bottom: auto
+  left: 0px
+  z-index: 1
+#menu > nav, .contacts
+  ul
+    list-style: none
+    padding: 0
+    text-align: center
+    li
+      display: inline
+      margin: 0 40px
+      border: 0 none
+      a
+        text-transform: uppercase
+        padding: 0 0 5px 0
+        color: #d9d9d9
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+  .to-up-button
+    color: #d9d9d9
+    display: none
+    position: absolute
+    right: 20px
+    top: 20px
+
+#menu.fixed
+  .to-up-button
+    display: inline-block
+
+
+
+.about-container
+  width: 800px
+  margin: 0 auto
+  padding-top: 50px
+  .avatar
+    background-image: url('https://pp.vk.me/c562/u18428546/a_10e480f2.jpg')
+    background-position: center
+    height: 200px
+    width: 200px
+    border-radius: 100px
+    display: inline-block
+  .about-text
+    width: 570px
+    display: inline-block
+    margin-left: 20px
+    font-size: 13pt
+    .tech-icons
+      text-align: center
+      font-size: 25pt
+      i
+        margin-left: 20px
+
+.pholio
+  text-align: center
+  h4
+    text-transform: uppercase
+    color: #242424
+    font-weight: 700
+
+.pholio-item
+  max-width: 800px
+  margin: 0 auto
+  margin-bottom: 50px
+  .title
+    font-size: 25pt
+  .subtitle
+    font-size: 20pt
+
+.contacts ul li a
+  color: black
+  font-size: 30pt
+
+
+.devider
+  margin: 50px 50px
+  height: 2px
+  background-color: #242424
+  position: relative
+  margin-top: 80px
+.devider:after
+  content: '#'
+  font-size: 30px
+  background-color: #ebebeb
+  position: absolute
+  top: -17px
+  left: 48%
+  padding: 0 20px
+
+.footer
+  font-size: 8pt
+  text-align: right
+  padding-right: 20px
+  margin-top: 10px

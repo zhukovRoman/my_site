@@ -1,0 +1,23 @@
+#contacts
+= render 'devider'
+h3
+  =t('contacts.welcome')
+.contacts
+  ul
+    li
+      a href='https://github.com/zhukovRoman'
+        =icon('github-alt')
+    li
+      a href='https://vk.com/rzhuk'
+        =icon('vk')
+    li
+      a href='https://www.facebook.com/zhukov.roman.92'
+        =icon('facebook')
+    li
+      a href='https://www.linkedin.com/profile/view?id=318070829'
+        =icon('linkedin')
+
+h3
+  =t('contacts.mail')
+  a href="mailto:#{ t('contacts.my_mail') }"
+    = " #{ t('contacts.my_mail') }"
